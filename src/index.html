@@ -7,8 +7,51 @@
   </head>
   <body>
     <div id="root">
-      <h1>Hello world!</h1>
+    <body class="login">
+      <div class="container">
+          <h2 class="text-center">Login</h2>
+          <br>
+          <form action="/dashboard.html" class="loginForm">
+              <div class="input-group">
+                  <label for="username" class="label">Username</label>
+                  <input type="text" id="username" class="input">
+                  <span class="error-message"></span>
+              </div>
+              <br>
+              <div class="input-group">
+                  <label for="password" class="label">Password</label>
+                  <input type="password" id="password" class="input">
+                  <span class="error-message"></span>
+                </div>
+                <div class="rule2">
+                  <input type="checkbox" id="checkbox2" class="form-check-in´put"/>
+                  <label for="checkbox2" class="form-check-label">Deseas Generar una contraseña aleatoria?</label>
+                  </div>
+                  <br>
+              <div class="generate-password">
+                  <h3 class="text-center"> Generador de contraseña</h3>
+              </div>
+              <div class="rule1">
+                  <label for="inputLenght" class="form-label">Tamaño</label>
+                  <input type="number" id="inputLenght" class="form-control text-center" min="8" max="12"/>
+                </div>
+                <div class="rule2">
+                    <input type="checkbox" id="checkbox2" class="form-check-in´put"/>
+                    <label for="checkbox2" class="form-check-label">Incluye numeros</label>
+                </div>
+                <div class="rule3">
+                  <input type="checkbox" id="checkbox3" class="form-check-in´put"/>
+                  <label for="checkbox3" class="form-check-label">Incluye Simbolos</label>
+              </div>
+              <div class="generate-password2">
+                  <button class="button2" id="GeneratePassword">Crear contraseña</button>
+              </div>
+              <br>
+              <button class="button" type="submit">Login</button>
+          </form>
+      </div>
     </div>
+  </body>
     <script src="index.js" type="module"></script>
   </body>
 </html>
