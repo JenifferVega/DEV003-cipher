@@ -5,7 +5,11 @@
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+ <!--<div>
+    <span><h1>Encripta tu Contraseña de Correo</h1></span>
+  </div>-->
   <body>
+    
     <div id="root">
     <body class="login">
       <div class="container">
@@ -36,22 +40,25 @@
                   <input type="number" id="inputLenght" class="form-control text-center" min="8" max="12"/>
                 </div>
                 <div class="rule2">
-                    <input type="checkbox" id="checkbox2" class="form-check-in´put"/>
+                    <input type="checkbox" id="checkbox2" class="form-check-input"/>
                     <label for="checkbox2" class="form-check-label">Incluye numeros</label>
                 </div>
                 <div class="rule3">
-                  <input type="checkbox" id="checkbox3" class="form-check-in´put"/>
+                  <input type="checkbox" id="checkbox3" class="form-check-input"/>
                   <label for="checkbox3" class="form-check-label">Incluye Simbolos</label>
               </div>
               <div class="generate-password2">
-                  <button class="button2" id="GeneratePassword">Crear contraseña</button>
+                  <button class="button2" id="GeneratePassword">Generar Contraseña</button>
+              </div>
+              <div class="passGen">
+                <span id="generatedPass" class="bg-success"></span>
               </div>
               <br>
-              <button class="button" type="submit">Login</button>
+              <!--<button class="button" type="submit">Login</button> -->
           </form>
       </div>
     </div>
   </body>
-    <script src="index.js" type="module"></script>
+    <script src="cipher.js" type="module"></script>
   </body>
 </html>
