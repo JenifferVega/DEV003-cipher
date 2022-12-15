@@ -101,6 +101,7 @@ const decode = document.getElementById("decode");
 const characterRange = document.getElementById("characterRange");
 
 encode.addEventListener("click", () => {
+    
   const textarea = document.getElementById("message");
   const MessageValue = Number(characterRange.value);
 

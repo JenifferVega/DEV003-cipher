@@ -34,7 +34,7 @@ const lisLetters = [
     sentence = sentence.toLowerCase();
 
     let newText = "";
-    
+
     for (const letter of sentence) {
       if (!lisLetters.includes(letter)) {
         //console.log("lisLetters" , lisLetters);
