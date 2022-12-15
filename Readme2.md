@@ -16,7 +16,6 @@ ESta funcion cumple basicamente que el usuario decida un nombre en minuscula y l
 
 los objetivos principales es que el usuario sepa de manera intuitiva como poder genenerar un codigo independientemente de cuantos caracteres necesite este y adicionalmente que el usuario pueda generar aleatoriamente una contraseña con mayusculas, caracteres especiales y numeros.
 
-* Cómo crees que el producto que estás creando está resolviendo sus problemas
 Esta resolviendo una necesidad del usuario, de crear de una manera segura y aleatoria una contraseña la cual le de la certeza de que no sera descifrada y que tampoco se la podrian copiar para robarle informacion o si bien cifrar informacion y de la misma forma saber que esta cifrado y que no se podra acceder a la informacion vital.
 
 
