@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="index.js" defer></script>
+  </head>
+  <!--<div>
+    <span><h1>Encripta tu Contraseña de Correo</h1></span>
+  </div>-->
+
+  <body class="login">
+    <div class="container">
+      <h2 class="text-center">Login</h2>
+      <br />
+      <form id="passwordGeneratorForm" class="form">
+        <div class="input-group">
+          <label for="username" class="label">Username</label>
+          <input type="text" id="username" class="input" />
+          <span class="error-message"></span>
+        </div>
+        <br />
+        <div class="input-group">
+          <label for="password" class="label">Password</label>
+          <input type="password" id="password" class="input" />
+          <span class="error-message"></span>
+        </div>
+
+        <div class="rule1">
+          <input type="checkbox" id="checkbox2" class="form-check-input" />
+          <label
+            for="checkbox2"
+            id="nombre"
+            class="form-check-label"
+            onClick="showContainer()"
+            >Do you want to generate a cypher password?</label
+          >
+        </div>
+        <div class="rule3">
+          <input type="checkbox" id="checkbox3" class="form-check-input" />
+          <label for="checkbox2" class="form-check-label"
+            >Do you want to decode your password?</label
+          >
+        </div>
+        <div id="containerBody">
+          <br />
+          <div class="generate-password">
+            <h3 class="text-center">Generator of Password</h3>
+          </div>
+
+          <label for="characterAmountNumber">Number Of Characters</label>
+          <div class="character-amount-container">
+            <input
+              type="range"
+              min="1"
+              max="50"
+              value="10"
+              id="characterAmountRange"
+            />
+            <input
+              class="number-input"
+              type="number"
+              min="1"
+              max="50"
+              value="10"
+              id="characterAmountNumber"
+            />
+          </div>
+          <div class="InpuUpper">
+            <input
+              type="checkbox"
+              id="includeUppercase"
+              class="form-check-input"
+            />
+            <label for="includeUppercase" class="form-check-label"
+              >Include Uppercase</label
+            >
+          </div>
+          <div class="InpuNumbers">
+            <input
+              type="checkbox"
+              id="includeNumbers"
+              class="form-check-input"
+            />
+            <label for="checkbox2" class="form-check-label"
+              >Include Numbers</label
+            >
+          </div>
+          <div class="inpuSymbols">
+            <input
+              type="checkbox"
+              id="includeSymbols"
+              class="form-check-input"
+            />
+            <label for="checkbox3" class="form-check-label"
+              >Include Symbols</label
+            >
+          </div>
+          <div class="cipherPassword">
+            <button type="submit" id="passwordCipher">Cipher password</button>
+          </div>
+        </div>
+        <br />
+        <div>
+          <label for="Displaypassword" class="form-label"
+            >Your cypher password</label
+          >
+          <input
+            type="text"
+            id="passwordDisplay"
+            class="form-control text-center"
+          />
+        </div>
+      </form>
+      <div>
+        <br />
+        <br />
+        <br />
+        <div id="container-bod">
+          <h3>Cesar Cypher</h3>
+          <br />
+          <label class="form-label">Your Message</label>
+          <input type="text" id="message" class="form-control text-center" />
+          <br />
+          <label>Number Of Positions</label>
+          <input required class="number-input" size="50" id="characterRange" />
+          <br />
+          <div class="row-rev">
+            <br />
+            <button type="buttonCypher" class="typeEncode" id="encode">
+              Encrypt
+            </button>
+            <br />
+            <button type="buttonCypher" class="typeDecode" id="decode">
+              Decrypt
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
